@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificare sau Decodificare Mesaj</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc); /* Fundal gradient cu culori plăcute */
+            margin: 0;
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 400px;
+            transform: translateY(-10%);
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        button {
+            padding: 1.3em 3em;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #23c483;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            outline: none;
+            width: 100%;
+            margin: 15px 0;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background-color: #ff6f61;
+            box-shadow: 0px 15px 20px rgba(255, 111, 97, 0.4);
+            transform: translateY(-7px);
+        }
+
+        button:active {
+            transform: translateY(-1px);
+        }
+
+        /* Efect de umbre pentru text și butoane */
+        h2, button {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Crearea unui efect de rotire a containerului la hover */
+        .container:hover {
+            transform: translateY(-10%) rotate(2deg);
+        }
+
+        /* Adăugarea unui efect de animație la butoane */
+        button {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Animație de apăsare a butonului */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Ce vrei să faci?</h2>
+        <!-- Butoane pentru a alege între codificare sau decodificare -->
+        <a href="codificare.html"><button>Codifică Mesaj</button></a>
+        <a href="decodificare.html"><button>Decodifică Mesaj</button></a>
+    </div>
+</body>
+</html>
